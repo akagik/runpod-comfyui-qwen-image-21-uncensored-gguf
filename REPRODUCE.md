@@ -3,8 +3,8 @@
 ## Fixed stack
 
 ```text
-Image: ghcr.io/akagik/runpod-comfyui-qwen-image-21-uncensored-gguf:0.1.0
-Template: pending until the first immutable image build completes
+Image: ghcr.io/akagik/runpod-comfyui-qwen-image-21-uncensored-gguf:0.1.0@sha256:975e514e05af250bcab6caa1c3ec161c808a5f039729ca1d01bf889edc2eeba7
+Template: d4detb1p14
 Network Volume: selected when creating a Pod; never embedded in the template
 Container disk: 40GB
 Ports: 8188/http, 22/tcp
@@ -13,6 +13,10 @@ Mount: /workspace
 
 The model source, revision, filenames, sizes and SHA-256 hashes are fixed in
 `scripts/bootstrap_models.py`.
+
+The template was read back from the RunPod API after creation. It contains no
+Network Volume ID and does not enable Manager auto rental. Attach the desired
+persistent Volume manually when creating a Pod.
 
 ## Before creating a Pod
 

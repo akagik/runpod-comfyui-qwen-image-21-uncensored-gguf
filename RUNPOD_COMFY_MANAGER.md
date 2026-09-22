@@ -79,4 +79,6 @@ rcmctl markdown-submit --source-path /absolute/path/request.md \
 ```
 
 Manager auto rental is intentionally not configured for this profile. Start a
-Pod from the dedicated template first, then submit to that live Pod.
+Pod from template `d4detb1p14` first, then submit to that live Pod. The template
+does not contain a Network Volume ID, so select the persistent Volume during
+manual Pod creation.

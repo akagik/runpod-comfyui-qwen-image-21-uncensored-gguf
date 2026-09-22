@@ -13,6 +13,11 @@ The image contains no model weights. The first Pod start downloads the three
 pinned files into persistent `/workspace` storage, verifies their byte sizes
 and SHA-256 hashes, and starts ComfyUI with the loader cache enabled.
 
+```text
+RunPod template: d4detb1p14
+Immutable image: ghcr.io/akagik/runpod-comfyui-qwen-image-21-uncensored-gguf:0.1.0@sha256:975e514e05af250bcab6caa1c3ec161c808a5f039729ca1d01bf889edc2eeba7
+```
+
 ## Fixed sources
 
 ```text
@@ -43,6 +48,10 @@ RunPod Comfy Manager workflows:
 Both Manager workflows use model profile
 `qwen-image-2.1-uncensored-gguf-q4km`. Switching between T2I and Edit inside
 one running Pod reuses the same ComfyUI loader signature.
+
+Ready-to-validate Manager requests are in [`examples/t2i.md`](examples/t2i.md)
+and [`examples/edit.md`](examples/edit.md). The edit example supplies two local
+reference images for character and clothing guidance.
 
 ## Persistence
 
