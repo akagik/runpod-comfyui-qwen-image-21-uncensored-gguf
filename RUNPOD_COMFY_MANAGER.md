@@ -1,5 +1,8 @@
 # RunPod Comfy Manager integration
 
+別のAIへ生成を任せる場合のMarkdown作成、検証、単発・一括投入、監視、出力回収の完全手順は
+[`AI_GENERATION_GUIDE.md`](AI_GENERATION_GUIDE.md)を参照してください。
+
 ## Profiles
 
 ```text

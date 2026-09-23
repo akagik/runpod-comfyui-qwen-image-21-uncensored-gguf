@@ -81,3 +81,7 @@ See [REPRODUCE.md](REPRODUCE.md) for deployment and verification and
 [RUNPOD_COMFY_MANAGER.md](RUNPOD_COMFY_MANAGER.md) for Manager usage. The
 verified A40 run, timings, VRAM measurements and outputs are recorded in
 [VALIDATION_2026-09-23.md](VALIDATION_2026-09-23.md).
+
+For another AI agent preparing Markdown requests and submitting them through
+the Manager, use the Japanese end-to-end runbook
+[AI_GENERATION_GUIDE.md](AI_GENERATION_GUIDE.md).
