@@ -24,9 +24,15 @@ Run live read-only checks for GPU stock, hourly price, data center and Volume
 capacity. Present the complete cost and obtain explicit approval before Pod
 creation. Do not reuse the historical price in this document.
 
-The initial target is a 24 GB or larger NVIDIA GPU. An RTX PRO 4500 Blackwell
-32 GB in the same data center as an existing Volume is a practical first test,
-but the actual choice must follow current stock and price.
+The stack was validated on a Secure A40 with a 30GB Pod Volume. At the time of
+validation it cost $0.49/hour for the GPU and used 19.11 GiB peak GPU memory in
+a two-reference Edit. Current stock and price must still be checked before
+every new Pod.
+
+The 30GB Pod Volume survives Stop/Start on that Pod and keeps the downloaded
+models, but it is deleted when the Pod is terminated. Use a Network Volume when
+the cache must survive Pod replacement. The template accepts either at
+`/workspace`.
 
 ## Readiness
 

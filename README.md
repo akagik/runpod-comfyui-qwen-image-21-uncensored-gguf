@@ -78,4 +78,6 @@ commercial use. The container source does not change or expand the model
 licence.
 
 See [REPRODUCE.md](REPRODUCE.md) for deployment and verification and
-[RUNPOD_COMFY_MANAGER.md](RUNPOD_COMFY_MANAGER.md) for Manager usage.
+[RUNPOD_COMFY_MANAGER.md](RUNPOD_COMFY_MANAGER.md) for Manager usage. The
+verified A40 run, timings, VRAM measurements and outputs are recorded in
+[VALIDATION_2026-09-23.md](VALIDATION_2026-09-23.md).
